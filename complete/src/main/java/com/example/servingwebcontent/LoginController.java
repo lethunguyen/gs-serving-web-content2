@@ -8,12 +8,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class LoginController {
 
-	@GetMapping("/login")
+	@GetMapping("/Login")
 	
 
-    public String login(@RequestParam(fname="fname", required=false, defaultValue="World") String fname, Model model) {
-		model.addAttribute("fname", fname);
-		return "index";
+    public String login(@RequestParam(name="fname", required=false, defaultValue="World") String name, Model model) {
+		model.addAttribute("name", name);
+	
+		return "hello";
 	}
 
 }
