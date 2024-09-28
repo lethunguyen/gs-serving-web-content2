@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 //import java.lang.Exception;
 import java.lang.RuntimeException;
 
+import User;
+
 @Controller
 public class LoginController {
 
