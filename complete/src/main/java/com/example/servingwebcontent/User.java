@@ -12,6 +12,10 @@ public class User {
 
     }
 
+    public void printUserName(User u){
+        System.out.println(u.userName);
+    }
+
 
 
 }

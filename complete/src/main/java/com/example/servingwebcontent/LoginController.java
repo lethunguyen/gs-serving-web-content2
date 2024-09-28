@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 //import java.lang.Exception;
 import java.lang.RuntimeException;
 
-import User;
+import com.example.servingwebcontent.User;
 
 @Controller
 public class LoginController {
@@ -25,6 +25,9 @@ public class LoginController {
 			}
 			else {
 				model.addAttribute("name", name);
+				User u = new User();
+				u.setUserName(name);
+				u.printUserName(u);
 
 			}
 
